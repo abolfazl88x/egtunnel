@@ -4,10 +4,10 @@ import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = '4367d60a-9e2f-46d3-95ff-b946db1e9ac7';
+let userID = '54522899-95dd-422d-ac81-7ddba96f835f';
 let proxyIP = "proxyip.digitalocean.fxxk.dedyn.io";
 
-let dohURL = 'https://1.1.1.1/dns-query'; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
+let dohURL = 'https://dns.aa.net.uk/dns-query'; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
 
 // v2board api environment variables
 let nodeId = ''; // 1
@@ -99,7 +99,7 @@ export default {
                     default:
                         // return new Response('Not found', { status: 404 });
                         // For any other path, reverse proxy to 'maimai.sega.jp' and return the original response
-                        url.hostname = 'maimai.sega.jp';
+                        url.hostname = 'zula.ir';
                         url.protocol = 'https:';
                         request = new Request(url, request);
                         return await fetch(request);
